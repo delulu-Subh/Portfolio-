@@ -1,0 +1,1863 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Subham Dey - AI & Software Developer | Building at the Intersection of Code × Design × Business</title>
+    <meta name="description" content="BTech CSE–AI @ SNU | Graphic Designer @ GFG-SNU & ZeroDay Alliance | Certified in Strategy, Marketing & SQL | Building innovative AI tools and scalable systems." />
+    <link rel="stylesheet" href="../css/main.css" />
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Subham Dey - AI & Software Developer" />
+    <meta property="og:description" content="Building at the intersection of Code × Design × Business. Full-stack developer with expertise in AI, prompt engineering, and business strategy." />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=2067&auto=format&fit=crop&ixlib=rb-4.0.3" />
+    <meta property="og:url" content="https://subham-dey-portfolio.com" />
+    <meta property="og:type" content="website" />
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Subham Dey - AI & Software Developer" />
+    <meta name="twitter:description" content="Building at the intersection of Code × Design × Business" />
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=2067&auto=format&fit=crop&ixlib=rb-4.0.3" />
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Subham Dey",
+      "jobTitle": "AI & Software Developer",
+      "description": "BTech Computer Science + Artificial Intelligence student specializing in AI tools, prompt engineering, and full-stack development",
+      "url": "https://subham-dey-portfolio.com",
+      "sameAs": [
+        "https://github.com/delulu-Subh",
+        "https://www.linkedin.com/in/subham-dey-17b7a0275/",
+        "https://www.instagram.com/delulu_subh_/",
+        "https://x.com/_subham_dey_",
+        "https://www.threads.com/@delulu_subh_"
+      ],
+      "knowsAbout": [
+        "Artificial Intelligence",
+        "Node.js",
+        "Full Stack Development",
+        "Graphic Design",
+        "Business Strategy",
+        "Data Structures & Algorithms",
+        "SQL"
+      ],
+      "alumniOf": "Sister Nivedita University",
+      "email": "sdey200406@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Greater Kolkata Area",
+        "addressCountry": "India"
+      }
+    }
+    </script>
+
+    <style>
+        /* 3D Animation Styles */
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotateX(0deg); }
+            50% { transform: translateY(-20px) rotateX(10deg); }
+        }
+
+        @keyframes rotate3d {
+            0% { transform: rotateY(0deg) rotateX(0deg); }
+            25% { transform: rotateY(90deg) rotateX(5deg); }
+            50% { transform: rotateY(180deg) rotateX(0deg); }
+            75% { transform: rotateY(270deg) rotateX(-5deg); }
+            100% { transform: rotateY(360deg) rotateX(0deg); }
+        }
+
+        @keyframes slideIn3d {
+            from {
+                opacity: 0;
+                transform: translate3d(0, 50px, -100px) rotateX(30deg);
+            }
+            to {
+                opacity: 1;
+                transform: translate3d(0, 0, 0) rotateX(0deg);
+            }
+        }
+
+        @keyframes fadeInUp3d {
+            from {
+                opacity: 0;
+                transform: translate3d(0, 40px, -50px);
+            }
+            to {
+                opacity: 1;
+                transform: translate3d(0, 0, 0);
+            }
+        }
+
+        @keyframes scaleIn3d {
+            from {
+                opacity: 0;
+                transform: scale3d(0.8, 0.8, 0.8) rotateY(-10deg);
+            }
+            to {
+                opacity: 1;
+                transform: scale3d(1, 1, 1) rotateY(0deg);
+            }
+        }
+
+        @keyframes pulse3d {
+            0%, 100% {
+                transform: scale3d(1, 1, 1);
+                box-shadow: 0 0 0 0 rgba(0, 217, 255, 0.4);
+            }
+            50% {
+                transform: scale3d(1.05, 1.05, 1.05);
+                box-shadow: 0 0 0 15px rgba(0, 217, 255, 0);
+            }
+        }
+
+        /* Cinematic Spiritual Background */
+        @keyframes cosmicGradient {
+            0% { 
+                background: radial-gradient(ellipse at 20% 50%, 
+                    #1e1b4b 0%, 
+                    #7c3aed 25%, 
+                    #3730a3 50%, 
+                    #1e3a8a 75%, 
+                    #0f172a 100%);
+            }
+            25% { 
+                background: radial-gradient(ellipse at 80% 20%, 
+                    #3730a3 0%, 
+                    #7c3aed 25%, 
+                    #c2410c 50%, 
+                    #dc2626 75%, 
+                    #0f172a 100%);
+            }
+            50% { 
+                background: radial-gradient(ellipse at 50% 80%, 
+                    #7c3aed 0%, 
+                    #1e1b4b 25%, 
+                    #c2410c 50%, 
+                    #1e3a8a 75%, 
+                    #0f172a 100%);
+            }
+            75% { 
+                background: radial-gradient(ellipse at 10% 10%, 
+                    #c2410c 0%, 
+                    #dc2626 25%, 
+                    #7c3aed 50%, 
+                    #1e1b4b 75%, 
+                    #0f172a 100%);
+            }
+            100% { 
+                background: radial-gradient(ellipse at 20% 50%, 
+                    #1e1b4b 0%, 
+                    #7c3aed 25%, 
+                    #3730a3 50%, 
+                    #1e3a8a 75%, 
+                    #0f172a 100%);
+            }
+        }
+
+        /* Floating Glowing Particles */
+        @keyframes particleFloat {
+            0% { 
+                transform: translate3d(0, 0, 0) scale(0.8); 
+                opacity: 0.6;
+            }
+            25% { 
+                transform: translate3d(100px, -150px, 20px) scale(1.2); 
+                opacity: 1;
+            }
+            50% { 
+                transform: translate3d(-80px, -300px, -10px) scale(0.9); 
+                opacity: 0.7;
+            }
+            75% { 
+                transform: translate3d(-120px, -100px, 30px) scale(1.1); 
+                opacity: 0.9;
+            }
+            100% { 
+                transform: translate3d(0, 0, 0) scale(0.8); 
+                opacity: 0.6;
+            }
+        }
+
+        @keyframes particleGlow {
+            0%, 100% { 
+                box-shadow: 0 0 10px rgba(255, 215, 0, 0.6),
+                           0 0 20px rgba(255, 215, 0, 0.4),
+                           0 0 40px rgba(255, 215, 0, 0.2);
+            }
+            50% { 
+                box-shadow: 0 0 20px rgba(0, 191, 255, 0.8),
+                           0 0 40px rgba(0, 191, 255, 0.6),
+                           0 0 80px rgba(0, 191, 255, 0.3);
+            }
+        }
+
+        /* Lotus/Mandala Patterns */
+        @keyframes lotusRotate {
+            0% { 
+                transform: rotate(0deg) scale(1); 
+                opacity: 0.15;
+            }
+            25% { 
+                transform: rotate(90deg) scale(1.1); 
+                opacity: 0.25;
+            }
+            50% { 
+                transform: rotate(180deg) scale(0.9); 
+                opacity: 0.2;
+            }
+            75% { 
+                transform: rotate(270deg) scale(1.05); 
+                opacity: 0.3;
+            }
+            100% { 
+                transform: rotate(360deg) scale(1); 
+                opacity: 0.15;
+            }
+        }
+
+        @keyframes mandalaBreath {
+            0%, 100% { 
+                transform: scale(1) rotate(0deg); 
+                filter: hue-rotate(0deg) brightness(0.8);
+            }
+            50% { 
+                transform: scale(1.2) rotate(180deg); 
+                filter: hue-rotate(180deg) brightness(1.2);
+            }
+        }
+
+        /* Data Stream Effects */
+        @keyframes dataFlow {
+            0% { 
+                transform: translateY(100vh) translateX(-50px) rotateZ(0deg); 
+                opacity: 0;
+            }
+            10% { 
+                opacity: 0.8;
+            }
+            90% { 
+                opacity: 0.8;
+            }
+            100% { 
+                transform: translateY(-100px) translateX(50px) rotateZ(360deg); 
+                opacity: 0;
+            }
+        }
+
+        @keyframes holographicShimmer {
+            0%, 100% { 
+                background-position: -100% 0;
+                opacity: 0.3;
+            }
+            50% { 
+                background-position: 100% 0;
+                opacity: 0.7;
+            }
+        }
+
+        .floating-element {
+            animation: float 6s ease-in-out infinite;
+            transform-style: preserve-3d;
+        }
+
+        .rotating-3d {
+            animation: rotate3d 20s linear infinite;
+            transform-style: preserve-3d;
+        }
+
+        .slide-in-3d {
+            animation: slideIn3d 1s ease-out forwards;
+            transform-style: preserve-3d;
+        }
+
+        .fade-in-up-3d {
+            animation: fadeInUp3d 0.8s ease-out forwards;
+            animation-delay: 0.2s;
+            opacity: 0;
+            transform-style: preserve-3d;
+        }
+
+        .scale-in-3d {
+            animation: scaleIn3d 0.6s ease-out forwards;
+            opacity: 0;
+            transform-style: preserve-3d;
+        }
+
+        .pulse-3d {
+            animation: pulse3d 2s infinite;
+            transform-style: preserve-3d;
+        }
+
+        .perspective-container {
+            perspective: 1000px;
+            transform-style: preserve-3d;
+        }
+
+        .card-3d {
+            transform-style: preserve-3d;
+            transition: all 0.3s ease;
+        }
+
+        .card-3d:hover {
+            transform: translateY(-10px) rotateX(5deg) rotateY(5deg);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .skill-cube {
+            width: 60px;
+            height: 60px;
+            position: relative;
+            transform-style: preserve-3d;
+            animation: rotate3d 8s linear infinite;
+        }
+
+        .skill-cube .face {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            border: 2px solid var(--color-accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: var(--color-accent);
+            background: rgba(0, 217, 255, 0.1);
+        }
+
+        .skill-cube .front  { transform: rotateY(0deg) translateZ(30px); }
+        .skill-cube .back   { transform: rotateY(180deg) translateZ(30px); }
+        .skill-cube .right  { transform: rotateY(90deg) translateZ(30px); }
+        .skill-cube .left   { transform: rotateY(-90deg) translateZ(30px); }
+        .skill-cube .top    { transform: rotateX(90deg) translateZ(30px); }
+        .skill-cube .bottom { transform: rotateX(-90deg) translateZ(30px); }
+
+        .gradient-text-3d {
+            background: linear-gradient(45deg, var(--color-primary), var(--color-accent), var(--color-secondary));
+            background-size: 200% 200%;
+            animation: gradient-shift 3s ease infinite;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        @keyframes gradient-shift {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+
+        .stagger-animation > * {
+            opacity: 0;
+            animation: fadeInUp3d 0.8s ease-out forwards;
+        }
+
+        .stagger-animation > *:nth-child(1) { animation-delay: 0.1s; }
+        .stagger-animation > *:nth-child(2) { animation-delay: 0.2s; }
+        .stagger-animation > *:nth-child(3) { animation-delay: 0.3s; }
+        .stagger-animation > *:nth-child(4) { animation-delay: 0.4s; }
+        .stagger-animation > *:nth-child(5) { animation-delay: 0.5s; }
+        .stagger-animation > *:nth-child(6) { animation-delay: 0.6s; }
+
+        /* Enhanced Cinematic 3D Background */
+        .cinematic-hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 0;
+            animation: cosmicGradient 20s ease-in-out infinite;
+        }
+
+        /* Glowing Particles Container */
+        .cosmic-particles {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+
+        .particle {
+            position: absolute;
+            border-radius: 50%;
+            animation: particleFloat 15s ease-in-out infinite, particleGlow 3s ease-in-out infinite;
+            transform-style: preserve-3d;
+        }
+
+        .particle.small {
+            width: 4px;
+            height: 4px;
+            background: radial-gradient(circle, rgba(255,215,0,0.9) 0%, rgba(255,215,0,0.3) 50%, rgba(255,215,0,0) 100%);
+        }
+
+        .particle.medium {
+            width: 8px;
+            height: 8px;
+            background: radial-gradient(circle, rgba(0,191,255,0.9) 0%, rgba(0,191,255,0.3) 50%, rgba(0,191,255,0) 100%);
+        }
+
+        .particle.large {
+            width: 12px;
+            height: 12px;
+            background: radial-gradient(circle, rgba(147,51,234,0.9) 0%, rgba(147,51,234,0.3) 50%, rgba(147,51,234,0) 100%);
+        }
+
+        .particle:nth-child(1) { top: 10%; left: 20%; animation-delay: 0s; animation-duration: 18s; }
+        .particle:nth-child(2) { top: 80%; left: 80%; animation-delay: -5s; animation-duration: 22s; }
+        .particle:nth-child(3) { top: 60%; left: 10%; animation-delay: -10s; animation-duration: 16s; }
+        .particle:nth-child(4) { top: 30%; left: 70%; animation-delay: -15s; animation-duration: 20s; }
+        .particle:nth-child(5) { top: 90%; left: 40%; animation-delay: -7s; animation-duration: 19s; }
+        .particle:nth-child(6) { top: 15%; left: 60%; animation-delay: -12s; animation-duration: 17s; }
+        .particle:nth-child(7) { top: 70%; left: 25%; animation-delay: -8s; animation-duration: 21s; }
+        .particle:nth-child(8) { top: 45%; left: 90%; animation-delay: -18s; animation-duration: 15s; }
+        .particle:nth-child(9) { top: 20%; left: 5%; animation-delay: -3s; animation-duration: 23s; }
+        .particle:nth-child(10) { top: 85%; left: 65%; animation-delay: -14s; animation-duration: 16s; }
+
+        /* Lotus/Mandala Patterns */
+        .spiritual-patterns {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+
+        .lotus-pattern {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            opacity: 0.15;
+            animation: lotusRotate 30s linear infinite;
+            transform-origin: center;
+        }
+
+        .lotus-pattern:nth-child(1) {
+            top: 20%;
+            left: 15%;
+            animation-delay: 0s;
+            animation-duration: 35s;
+        }
+
+        .lotus-pattern:nth-child(2) {
+            top: 65%;
+            right: 10%;
+            animation-delay: -10s;
+            animation-duration: 40s;
+        }
+
+        .lotus-pattern:nth-child(3) {
+            bottom: 25%;
+            left: 50%;
+            transform: translateX(-50%);
+            animation-delay: -20s;
+            animation-duration: 32s;
+        }
+
+        .mandala-ring {
+            position: absolute;
+            border: 2px solid;
+            border-image: linear-gradient(45deg, rgba(255,215,0,0.3), rgba(147,51,234,0.3), rgba(0,191,255,0.3)) 1;
+            border-radius: 50%;
+            animation: mandalaBreath 12s ease-in-out infinite;
+        }
+
+        .mandala-ring:nth-child(1) {
+            width: 300px;
+            height: 300px;
+            top: 30%;
+            right: 20%;
+            animation-delay: 0s;
+        }
+
+        .mandala-ring:nth-child(2) {
+            width: 150px;
+            height: 150px;
+            bottom: 40%;
+            left: 25%;
+            animation-delay: -4s;
+        }
+
+        .mandala-ring:nth-child(3) {
+            width: 250px;
+            height: 250px;
+            top: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            animation-delay: -8s;
+        }
+
+        /* Data Streams and Holographic Effects */
+        .tech-streams {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+
+        .data-stream {
+            position: absolute;
+            width: 2px;
+            height: 50px;
+            background: linear-gradient(to bottom, 
+                rgba(0,255,255,0), 
+                rgba(0,255,255,0.8), 
+                rgba(0,255,255,0.4),
+                rgba(0,255,255,0));
+            animation: dataFlow 8s linear infinite;
+        }
+
+        .data-stream:nth-child(1) { left: 10%; animation-delay: 0s; }
+        .data-stream:nth-child(2) { left: 30%; animation-delay: -2s; }
+        .data-stream:nth-child(3) { left: 50%; animation-delay: -4s; }
+        .data-stream:nth-child(4) { left: 70%; animation-delay: -6s; }
+        .data-stream:nth-child(5) { left: 90%; animation-delay: -1s; }
+
+        .holographic-fractal {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(45deg, 
+                rgba(255,0,255,0.1), 
+                rgba(0,255,255,0.1), 
+                rgba(255,215,0,0.1));
+            background-size: 200% 200%;
+            animation: holographicShimmer 6s ease-in-out infinite;
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+        }
+
+        .holographic-fractal:nth-child(1) {
+            top: 25%;
+            right: 30%;
+            animation-delay: 0s;
+        }
+
+        .holographic-fractal:nth-child(2) {
+            bottom: 35%;
+            left: 40%;
+            animation-delay: -3s;
+        }
+
+        /* Om Symbol Glow Effect */
+        .om-symbol {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 120px;
+            color: rgba(255, 215, 0, 0.08);
+            animation: mandalaBreath 15s ease-in-out infinite;
+            z-index: 1;
+        }
+
+        /* Parallax Layers */
+        .parallax-layer {
+            position: absolute;
+            width: 100%;
+            height: 120%;
+            top: -10%;
+            left: 0;
+        }
+
+        .parallax-far { animation-duration: 60s; }
+        .parallax-mid { animation-duration: 40s; }
+        .parallax-near { animation-duration: 25s; }
+
+        /* Enhanced cosmic background effect */
+        .cosmic-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 20% 30%, rgba(124, 58, 237, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(194, 65, 12, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 40% 80%, rgba(30, 58, 138, 0.1) 0%, transparent 50%),
+                linear-gradient(135deg, 
+                    rgba(15, 23, 42, 0.9) 0%, 
+                    rgba(30, 27, 75, 0.8) 25%, 
+                    rgba(55, 48, 163, 0.7) 50%, 
+                    rgba(124, 58, 237, 0.6) 75%, 
+                    rgba(15, 23, 42, 0.9) 100%);
+            z-index: 2;
+        }
+
+        /* Breathing light effect for spiritual ambiance */
+        @keyframes spiritualGlow {
+            0%, 100% { opacity: 0.3; transform: scale(1); }
+            50% { opacity: 0.7; transform: scale(1.1); }
+        }
+
+        .spiritual-glow {
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, 
+                rgba(255, 215, 0, 0.1) 0%, 
+                rgba(147, 51, 234, 0.05) 50%, 
+                transparent 100%);
+            border-radius: 50%;
+            animation: spiritualGlow 8s ease-in-out infinite;
+        }
+
+        .spiritual-glow:nth-child(1) {
+            top: 10%;
+            left: 20%;
+            animation-delay: 0s;
+        }
+
+        .spiritual-glow:nth-child(2) {
+            bottom: 20%;
+            right: 25%;
+            animation-delay: -4s;
+        }
+</style>
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fpersonal12480back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+</head>
+<body class="bg-background text-text-primary">
+    <!-- Skip Links for Accessibility -->
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-accent text-primary px-4 py-2 rounded-lg font-semibold z-50">Skip to main content</a>
+    
+    <!-- Navigation Header -->
+    <header class="fixed top-0 w-full bg-background/95 backdrop-blur-sm border-b border-border z-40" role="banner">
+        <nav class="container-max section-padding py-4" role="navigation" aria-label="Main navigation">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center space-x-2 slide-in-3d">
+                    <div class="skill-cube w-8 h-8">
+                        <div class="face front">SD</div>
+                        <div class="face back">💻</div>
+                        <div class="face right">🎨</div>
+                        <div class="face left">🚀</div>
+                        <div class="face top">AI</div>
+                        <div class="face bottom">⭐</div>
+                    </div>
+                    <span class="text-xl font-bold gradient-text-3d">Subham Dey</span>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <ul class="hidden md:flex items-center space-x-8 stagger-animation" role="menubar">
+                    <li role="none"><a href="#home" class="text-primary font-semibold border-b-2 border-accent" role="menuitem" aria-current="page">Home</a></li>
+                    <li role="none"><a href="#about" class="text-text-secondary hover:text-primary transition-smooth" role="menuitem">About</a></li>
+                    <li role="none"><a href="#experience" class="text-text-secondary hover:text-primary transition-smooth" role="menuitem">Experience</a></li>
+                    <li role="none"><a href="#skills" class="text-text-secondary hover:text-primary transition-smooth" role="menuitem">Skills</a></li>
+                    <li role="none"><a href="#certifications" class="text-text-secondary hover:text-primary transition-smooth" role="menuitem">Certifications</a></li>
+                    <li role="none"><a href="#contact" class="btn-accent pulse-3d" role="menuitem">Contact</a></li>
+                </ul>
+                
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden p-2 text-text-secondary hover:text-primary" aria-label="Toggle mobile menu" id="mobile-menu-button">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <div class="md:hidden mt-4 pb-4 border-t border-border hidden" id="mobile-menu">
+                <ul class="space-y-2 pt-4" role="menu">
+                    <li><a href="#home" class="block py-2 text-primary font-semibold" role="menuitem" aria-current="page">Home</a></li>
+                    <li><a href="#about" class="block py-2 text-text-secondary hover:text-primary transition-smooth" role="menuitem">About</a></li>
+                    <li><a href="#experience" class="block py-2 text-text-secondary hover:text-primary transition-smooth" role="menuitem">Experience</a></li>
+                    <li><a href="#skills" class="block py-2 text-text-secondary hover:text-primary transition-smooth" role="menuitem">Skills</a></li>
+                    <li><a href="#certifications" class="block py-2 text-text-secondary hover:text-primary transition-smooth" role="menuitem">Certifications</a></li>
+                    <li><a href="#contact" class="block py-2 text-accent font-semibold" role="menuitem">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content" role="main">
+<!-- Hero Section -->
+<section id="home" class="relative min-h-screen flex items-center justify-center text-white overflow-hidden perspective-container" aria-labelledby="hero-heading">
+    <!-- Cinematic 3D Spiritual Background -->
+    <div class="cinematic-hero-bg"></div>
+    
+    <!-- Cosmic Overlay -->
+    <div class="cosmic-overlay"></div>
+    
+    <!-- Om Symbol Background -->
+    <div class="om-symbol">ॐ</div>
+    
+    <!-- Spiritual Glowing Ambiance -->
+    <div class="spiritual-glow"></div>
+    <div class="spiritual-glow"></div>
+    
+    <!-- Parallax Layers with Spiritual Patterns -->
+    <div class="parallax-layer parallax-far">
+        <div class="spiritual-patterns">
+            <!-- Lotus Patterns -->
+            <div class="lotus-pattern">
+                <svg viewBox="0 0 200 200" class="w-full h-full">
+                    <g fill="none" stroke="rgba(255,215,0,0.3)" stroke-width="1">
+                        <circle cx="100" cy="100" r="80"/>
+                        <circle cx="100" cy="100" r="60"/>
+                        <circle cx="100" cy="100" r="40"/>
+                        <circle cx="100" cy="100" r="20"/>
+                        <path d="M100,20 Q120,50 100,80 Q80,50 100,20"/>
+                        <path d="M180,100 Q150,120 120,100 Q150,80 180,100"/>
+                        <path d="M100,180 Q80,150 100,120 Q120,150 100,180"/>
+                        <path d="M20,100 Q50,80 80,100 Q50,120 20,100"/>
+                        <path d="M141,41 Q151,61 131,71 Q121,51 141,41"/>
+                        <path d="M159,159 Q149,149 159,129 Q169,139 159,159"/>
+                        <path d="M59,159 Q49,139 69,129 Q79,149 59,159"/>
+                        <path d="M41,41 Q61,31 71,51 Q51,61 41,41"/>
+                    </g>
+                </svg>
+            </div>
+            <div class="lotus-pattern">
+                <svg viewBox="0 0 200 200" class="w-full h-full">
+                    <g fill="none" stroke="rgba(147,51,234,0.3)" stroke-width="1">
+                        <circle cx="100" cy="100" r="75"/>
+                        <circle cx="100" cy="100" r="55"/>
+                        <circle cx="100" cy="100" r="35"/>
+                        <path d="M100,25 Q125,60 100,95 Q75,60 100,25"/>
+                        <path d="M175,100 Q140,125 105,100 Q140,75 175,100"/>
+                        <path d="M100,175 Q75,140 100,105 Q125,140 100,175"/>
+                        <path d="M25,100 Q60,75 95,100 Q60,125 25,100"/>
+                    </g>
+                </svg>
+            </div>
+            <div class="lotus-pattern">
+                <svg viewBox="0 0 200 200" class="w-full h-full">
+                    <g fill="none" stroke="rgba(0,191,255,0.25)" stroke-width="1">
+                        <circle cx="100" cy="100" r="70"/>
+                        <circle cx="100" cy="100" r="50"/>
+                        <circle cx="100" cy="100" r="30"/>
+                        <polygon points="100,30 130,70 170,70 140,100 150,140 100,120 50,140 60,100 30,70 70,70"/>
+                    </g>
+                </svg>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Parallax Mid Layer with Mandala Rings -->
+    <div class="parallax-layer parallax-mid">
+        <div class="mandala-ring"></div>
+        <div class="mandala-ring"></div>
+        <div class="mandala-ring"></div>
+    </div>
+    
+    <!-- Parallax Near Layer with Particles and Tech Elements -->
+    <div class="parallax-layer parallax-near">
+        <!-- Glowing Particles -->
+        <div class="cosmic-particles">
+            <div class="particle small"></div>
+            <div class="particle medium"></div>
+            <div class="particle large"></div>
+            <div class="particle small"></div>
+            <div class="particle medium"></div>
+            <div class="particle large"></div>
+            <div class="particle small"></div>
+            <div class="particle medium"></div>
+            <div class="particle small"></div>
+            <div class="particle large"></div>
+        </div>
+        
+        <!-- Tech Data Streams -->
+        <div class="tech-streams">
+            <div class="data-stream"></div>
+            <div class="data-stream"></div>
+            <div class="data-stream"></div>
+            <div class="data-stream"></div>
+            <div class="data-stream"></div>
+        </div>
+        
+        <!-- Holographic Fractals -->
+        <div class="holographic-fractal"></div>
+        <div class="holographic-fractal"></div>
+    </div>
+    
+    <!-- Original Floating Code Elements -->
+    <div class="absolute top-20 left-10 opacity-20 floating-element z-10">
+        <div class="code-block text-xs">
+            const developer = {<br />
+            &nbsp;&nbsp;name: 'Subham',<br />
+            &nbsp;&nbsp;passion: 'AI + Design'<br />
+            }
+        </div>
+    </div>
+    <div class="absolute bottom-32 right-16 opacity-20 floating-element z-10" style="animation-delay: -3s;">
+        <div class="code-block text-xs">
+            // Building tomorrow<br />
+            &nbsp;&nbsp;tech: 'innovative',<br />
+            &nbsp;&nbsp;impact: 'measurable'
+        </div>
+    </div>
+    
+    <div class="container-max section-padding text-center relative z-20">
+        <div class="max-w-4xl mx-auto">
+            <!-- Professional Badge -->
+            <div class="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-sm border border-white/30 rounded-full px-4 py-2 mb-8 scale-in-3d">
+                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                <span class="text-accent font-medium">AI & Software Developer</span>
+            </div>
+            
+            <!-- Main Headline -->
+            <h1 id="hero-heading" class="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight slide-in-3d">
+                Building at the<br />
+                <span class="gradient-text-3d">Intersection</span><br />
+                of <span class="text-accent">Code × Design × Business</span>
+            </h1>
+            
+            <!-- Subtitle -->
+            <p class="text-xl md:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto leading-relaxed fade-in-up-3d">
+                Hi, I'm <strong>Subham Dey</strong> — a BTech CSE–AI student at Sister Nivedita University. 
+                I'm a developer, designer, and business strategist — all at once.
+            </p>
+
+            <!-- Quote -->
+            <div class="mb-8 fade-in-up-3d" style="animation-delay: 0.4s;">
+                <blockquote class="text-lg italic text-accent border-l-4 border-accent pl-4 max-w-2xl mx-auto">
+                    "Tech without strategy is noise. Design without clarity is art. I build at the intersection."
+                    <footer class="text-sm text-gray-300 mt-2">– Subham Dey</footer>
+                </blockquote>
+            </div>
+            
+            <!-- Key Stats Dashboard -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12 max-w-3xl mx-auto stagger-animation">
+                <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20 card-3d">
+                    <div class="text-2xl font-bold text-accent">AI</div>
+                    <div class="text-sm text-gray-200">Tools Builder</div>
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20 card-3d">
+                    <div class="text-2xl font-bold text-accent">Full</div>
+                    <div class="text-sm text-gray-200">Stack</div>
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20 card-3d">
+                    <div class="text-2xl font-bold text-accent">5+</div>
+                    <div class="text-sm text-gray-200">Languages</div>
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20 card-3d">
+                    <div class="text-2xl font-bold text-accent">15+</div>
+                    <div class="text-sm text-gray-200">Certifications</div>
+                </div>
+            </div>
+            
+            <!-- Call to Action Buttons -->
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center stagger-animation">
+                <a href="#experience" class="btn-accent text-lg px-8 py-4 inline-flex items-center space-x-2 card-3d">
+                    <span>View My Work</span>
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                    </svg>
+                </a>
+                <a href="https://github.com/delulu-Subh" target="_blank" rel="noopener noreferrer" class="border-2 border-white text-white hover:bg-white hover:text-primary px-8 py-4 rounded-lg font-semibold transition-all duration-250 ease-out inline-flex items-center space-x-2 card-3d">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                    <span>GitHub Portfolio</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Scroll Indicator -->
+    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 floating-element z-20">
+        <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+        </svg>
+    </div>
+</section>
+
+        <!-- About Section -->
+        <section id="about" class="section-padding bg-surface perspective-container" aria-labelledby="about-heading">
+            <div class="container-max">
+                <div class="text-center mb-16">
+                    <h2 id="about-heading" class="text-3xl md:text-4xl font-bold text-primary mb-4 slide-in-3d">
+                        What I'm Doing Right Now
+                    </h2>
+                    <p class="text-xl text-text-secondary max-w-3xl mx-auto fade-in-up-3d">
+                        A multi-faceted approach to technology, design, and business strategy.
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-8 stagger-animation">
+                    <!-- Graphic Design -->
+                    <div class="card hover:shadow-interactive transition-all duration-300 card-3d">
+                        <div class="flex items-center space-x-3 mb-4">
+                            <div class="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center">
+                                <svg class="w-6 h-6 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold text-primary">Graphic Designer</h3>
+                        </div>
+                        <p class="text-text-secondary mb-4">
+                            <strong>@ GeeksforGeeks SNU Chapter & ZeroDay Alliance</strong><br />
+                            Crafting visual identity and storytelling through innovative design solutions that communicate complex technical concepts.
+                        </p>
+                        <div class="flex items-center space-x-2">
+                            <span class="w-3 h-3 bg-accent rounded-full"></span>
+                            <span class="text-sm text-text-secondary">Visual Identity • Storytelling • Brand Design</span>
+                        </div>
+                    </div>
+                    
+                    <!-- AI Tools -->
+                    <div class="card hover:shadow-interactive transition-all duration-300 card-3d">
+                        <div class="flex items-center space-x-3 mb-4">
+                            <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                                <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold text-primary">AI Tools Development</h3>
+                        </div>
+                        <p class="text-text-secondary mb-4">
+                            Building AI tools with <strong>prompt engineering, LLM APIs, and automation</strong>. 
+                            Creating intelligent solutions that bridge the gap between complex AI capabilities and user-friendly interfaces.
+                        </p>
+                        <div class="flex items-center space-x-2">
+                            <span class="w-3 h-3 bg-primary rounded-full"></span>
+                            <span class="text-sm text-text-secondary">LLM APIs • Automation • Prompt Engineering</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Open Source -->
+                    <div class="card hover:shadow-interactive transition-all duration-300 card-3d">
+                        <div class="flex items-center space-x-3 mb-4">
+                            <div class="w-12 h-12 bg-success/10 rounded-lg flex items-center justify-center">
+                                <svg class="w-6 h-6 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold text-primary">Open Source Contributor</h3>
+                        </div>
+                        <p class="text-text-secondary mb-4">
+                            Contributing on <strong>GitHub with projects blending tech, logic, and creativity</strong>. 
+                            Building solutions that matter and sharing knowledge with the global developer community.
+                        </p>
+                        <div class="flex items-center space-x-2">
+                            <span class="w-3 h-3 bg-success rounded-full"></span>
+                            <span class="text-sm text-text-secondary">GitHub • Open Source • Community Building</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- What I Bring Section -->
+                <div class="mt-16 text-center">
+                    <h3 class="text-2xl font-bold text-primary mb-8 slide-in-3d">What I Bring</h3>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 stagger-animation">
+                        <div class="bg-gradient-to-br from-accent/10 to-primary/10 rounded-lg p-6 card-3d">
+                            <div class="text-3xl mb-3">🧠</div>
+                            <h4 class="font-semibold text-primary mb-2">Strategic Mindset</h4>
+                            <p class="text-sm text-text-secondary">Startup execution ability</p>
+                        </div>
+                        <div class="bg-gradient-to-br from-primary/10 to-secondary/10 rounded-lg p-6 card-3d">
+                            <div class="text-3xl mb-3">💻</div>
+                            <h4 class="font-semibold text-primary mb-2">Full-Stack Technical</h4>
+                            <p class="text-sm text-text-secondary">AI, backend, and frontend</p>
+                        </div>
+                        <div class="bg-gradient-to-br from-secondary/10 to-accent/10 rounded-lg p-6 card-3d">
+                            <div class="text-3xl mb-3">📊</div>
+                            <h4 class="font-semibold text-primary mb-2">Business Acumen</h4>
+                            <p class="text-sm text-text-secondary">Growth & sustainability strategies</p>
+                        </div>
+                        <div class="bg-gradient-to-br from-accent/10 to-primary/10 rounded-lg p-6 card-3d">
+                            <div class="text-3xl mb-3">🎨</div>
+                            <h4 class="font-semibold text-primary mb-2">Design Perspective</h4>
+                            <p class="text-sm text-text-secondary">User-first problem solving</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section-padding bg-background perspective-container" aria-labelledby="experience-heading">
+            <div class="container-max">
+                <div class="text-center mb-16">
+                    <h2 id="experience-heading" class="text-3xl md:text-4xl font-bold text-primary mb-4 slide-in-3d">
+                        Professional Experience
+                    </h2>
+                    <p class="text-xl text-text-secondary max-w-3xl mx-auto fade-in-up-3d">
+                        Building impactful experiences through design, development, and open source contributions.
+                    </p>
+                </div>
+                
+                <div class="max-w-4xl mx-auto">
+                    <!-- Timeline -->
+                    <div class="relative">
+                        <!-- Timeline line -->
+                        <div class="absolute left-8 top-0 bottom-0 w-0.5 bg-accent/30"></div>
+                        
+                        <!-- ZeroDay Alliance -->
+                        <div class="relative flex items-start mb-12 stagger-animation">
+                            <div class="absolute left-6 w-4 h-4 bg-accent rounded-full border-4 border-background pulse-3d"></div>
+                            <div class="ml-16 card-3d card">
+                                <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
+                                    <div>
+                                        <h3 class="text-xl font-semibold text-primary">Graphic Designer</h3>
+                                        <p class="text-accent font-medium">ZeroDay Alliance</p>
+                                    </div>
+                                    <div class="text-sm text-text-secondary mt-2 sm:mt-0">
+                                        <div class="bg-success/10 text-success px-3 py-1 rounded-full inline-block">
+                                            September 2025 - Present
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-text-secondary">
+                                    Creating visual identity and brand storytelling for cybersecurity community initiatives. 
+                                    Designing engaging content that communicates complex security concepts to diverse audiences.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- GeeksforGeeks -->
+                        <div class="relative flex items-start mb-12 stagger-animation">
+                            <div class="absolute left-6 w-4 h-4 bg-primary rounded-full border-4 border-background pulse-3d" style="animation-delay: 0.5s;"></div>
+                            <div class="ml-16 card-3d card">
+                                <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
+                                    <div>
+                                        <h3 class="text-xl font-semibold text-primary">Graphic Designer</h3>
+                                        <p class="text-accent font-medium">GeeksforGeeks Sister Nivedita University Chapter</p>
+                                    </div>
+                                    <div class="text-sm text-text-secondary mt-2 sm:mt-0">
+                                        <div class="bg-primary/10 text-primary px-3 py-1 rounded-full inline-block">
+                                            October 2024 - Present (1 year)
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-text-secondary mb-4">
+                                    Lead visual design for one of India's largest programming communities' university chapter. 
+                                    Creating educational content, event graphics, and brand materials that enhance learning experiences.
+                                </p>
+                                <p class="text-sm text-text-secondary">📍 Kolkata, West Bengal, India</p>
+                            </div>
+                        </div>
+
+                        <!-- Open Source Connect -->
+                        <div class="relative flex items-start mb-12 stagger-animation">
+                            <div class="absolute left-6 w-4 h-4 bg-secondary rounded-full border-4 border-background pulse-3d" style="animation-delay: 1s;"></div>
+                            <div class="ml-16 card-3d card">
+                                <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
+                                    <div>
+                                        <h3 class="text-xl font-semibold text-primary">Contributor</h3>
+                                        <p class="text-accent font-medium">Open Source Connect</p>
+                                    </div>
+                                    <div class="text-sm text-text-secondary mt-2 sm:mt-0">
+                                        <div class="bg-secondary/10 text-secondary px-3 py-1 rounded-full inline-block">
+                                            July 2025 - Present (3 months)
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-text-secondary">
+                                    Active contributor to open source projects, focusing on AI tools, automation scripts, and 
+                                    developer productivity solutions. Building tools that solve real-world problems for the developer community.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section-padding bg-surface perspective-container" aria-labelledby="skills-heading">
+            <div class="container-max">
+                <div class="text-center mb-16">
+                    <h2 id="skills-heading" class="text-3xl md:text-4xl font-bold text-primary mb-4 slide-in-3d">
+                        Technical Excellence & Expertise
+                    </h2>
+                    <p class="text-xl text-text-secondary max-w-3xl mx-auto fade-in-up-3d">
+                        Multi-language proficiency and cutting-edge technical skills across the full development stack.
+                    </p>
+                </div>
+
+                <!-- Top Skills -->
+                <div class="mb-16">
+                    <h3 class="text-2xl font-semibold text-primary mb-8 text-center slide-in-3d">Top Technical Skills</h3>
+                    <div class="grid md:grid-cols-3 gap-8 stagger-animation">
+                        <div class="text-center card-3d">
+                            <div class="skill-cube mx-auto mb-4">
+                                <div class="face front">JS</div>
+                                <div class="face back">💻</div>
+                                <div class="face right">⚡</div>
+                                <div class="face left">🚀</div>
+                                <div class="face top">AI</div>
+                                <div class="face bottom">⭐</div>
+                            </div>
+                            <h4 class="text-xl font-semibold text-primary mb-2">Node.js</h4>
+                            <p class="text-text-secondary">Server-side JavaScript runtime for scalable network applications</p>
+                        </div>
+                        <div class="text-center card-3d">
+                            <div class="skill-cube mx-auto mb-4">
+                                <div class="face front">💡</div>
+                                <div class="face back">🔧</div>
+                                <div class="face right">🎯</div>
+                                <div class="face left">📈</div>
+                                <div class="face top">✨</div>
+                                <div class="face bottom">🌟</div>
+                            </div>
+                            <h4 class="text-xl font-semibold text-primary mb-2">Innovation</h4>
+                            <p class="text-text-secondary">Creative problem-solving and cutting-edge technology implementation</p>
+                        </div>
+                        <div class="text-center card-3d">
+                            <div class="skill-cube mx-auto mb-4">
+                                <div class="face front">🌱</div>
+                                <div class="face back">♻️</div>
+                                <div class="face right">🌍</div>
+                                <div class="face left">📊</div>
+                                <div class="face top">💚</div>
+                                <div class="face bottom">🎯</div>
+                            </div>
+                            <h4 class="text-xl font-semibold text-primary mb-2">Corporate Sustainability</h4>
+                            <p class="text-text-secondary">Business strategy aligned with environmental and social responsibility</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Languages -->
+                <div class="mb-16">
+                    <h3 class="text-2xl font-semibold text-primary mb-8 text-center slide-in-3d">Language Proficiency</h3>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 stagger-animation">
+                        <div class="card card-3d">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center space-x-3">
+                                    <span class="text-2xl">🇮🇳</span>
+                                    <div>
+                                        <h4 class="font-semibold text-primary">Bengali</h4>
+                                        <p class="text-sm text-text-secondary">Native / Bilingual</p>
+                                    </div>
+                                </div>
+                                <div class="w-16 h-2 bg-border rounded-full">
+                                    <div class="w-full h-full bg-success rounded-full"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card-3d">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center space-x-3">
+                                    <span class="text-2xl">🇫🇷</span>
+                                    <div>
+                                        <h4 class="font-semibold text-primary">French</h4>
+                                        <p class="text-sm text-text-secondary">Professional Working</p>
+                                    </div>
+                                </div>
+                                <div class="w-16 h-2 bg-border rounded-full">
+                                    <div class="w-4/5 h-full bg-accent rounded-full"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card-3d">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center space-x-3">
+                                    <span class="text-2xl">🇵🇰</span>
+                                    <div>
+                                        <h4 class="font-semibold text-primary">Urdu</h4>
+                                        <p class="text-sm text-text-secondary">Native / Bilingual</p>
+                                    </div>
+                                </div>
+                                <div class="w-16 h-2 bg-border rounded-full">
+                                    <div class="w-full h-full bg-success rounded-full"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card-3d">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center space-x-3">
+                                    <span class="text-2xl">🇮🇳</span>
+                                    <div>
+                                        <h4 class="font-semibold text-primary">Hindi</h4>
+                                        <p class="text-sm text-text-secondary">Native / Bilingual</p>
+                                    </div>
+                                </div>
+                                <div class="w-16 h-2 bg-border rounded-full">
+                                    <div class="w-full h-full bg-success rounded-full"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card-3d">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center space-x-3">
+                                    <span class="text-2xl">🇺🇸</span>
+                                    <div>
+                                        <h4 class="font-semibold text-primary">English</h4>
+                                        <p class="text-sm text-text-secondary">Native / Bilingual</p>
+                                    </div>
+                                </div>
+                                <div class="w-16 h-2 bg-border rounded-full">
+                                    <div class="w-full h-full bg-success rounded-full"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- What I'm Looking For -->
+                <div class="text-center">
+                    <h3 class="text-2xl font-semibold text-primary mb-8 slide-in-3d">What I'm Looking For</h3>
+                    <div class="grid md:grid-cols-3 gap-6 stagger-animation">
+                        <div class="card card-3d hover:shadow-interactive transition-all duration-300">
+                            <div class="text-4xl mb-4">🚀</div>
+                            <h4 class="text-lg font-semibold text-primary mb-3">Tech/Product Internships</h4>
+                            <p class="text-text-secondary text-sm">AI, Software, Design opportunities where I can contribute to meaningful projects</p>
+                        </div>
+                        <div class="card card-3d hover:shadow-interactive transition-all duration-300">
+                            <div class="text-4xl mb-4">💡</div>
+                            <h4 class="text-lg font-semibold text-primary mb-3">Innovation-driven Teams</h4>
+                            <p class="text-text-secondary text-sm">Where learning equals building and every challenge is an opportunity</p>
+                        </div>
+                        <div class="card card-3d hover:shadow-interactive transition-all duration-300">
+                            <div class="text-4xl mb-4">🎯</div>
+                            <h4 class="text-lg font-semibold text-primary mb-3">Forward-thinking Firms</h4>
+                            <p class="text-text-secondary text-sm">Startups or companies that value versatility and execution excellence</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="section-padding bg-background perspective-container" aria-labelledby="certifications-heading">
+            <div class="container-max">
+                <div class="text-center mb-16">
+                    <h2 id="certifications-heading" class="text-3xl md:text-4xl font-bold text-primary mb-4 slide-in-3d">
+                        Certifications & Learning Journey
+                    </h2>
+                    <p class="text-xl text-text-secondary max-w-3xl mx-auto fade-in-up-3d">
+                        Continuous learning through world-class institutions and industry-recognized certifications.
+                    </p>
+                </div>
+                
+                <!-- University Certifications -->
+                <div class="mb-16">
+                    <h3 class="text-2xl font-semibold text-primary mb-8 text-center slide-in-3d">
+                        University-Level Certifications
+                    </h3>
+                    <div class="grid md:grid-cols-2 gap-8 stagger-animation">
+                        <div class="card card-3d hover:shadow-interactive transition-all duration-300">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-16 h-16 bg-gradient-to-br from-accent to-primary rounded-lg flex items-center justify-center">
+                                    <span class="text-2xl">🎓</span>
+                                </div>
+                                <div class="flex-1">
+                                    <h4 class="text-lg font-semibold text-primary mb-2">University of Illinois Urbana-Champaign</h4>
+                                    <div class="space-y-1 text-sm text-text-secondary">
+                                        <p>• Digital Marketing</p>
+                                        <p>• Managerial Economics</p>
+                                        <p>• Strategic Leadership</p>
+                                    </div>
+                                    <div class="mt-3 bg-accent/10 text-accent px-3 py-1 rounded-full text-xs inline-block">
+                                        World-Class Institution
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card card-3d hover:shadow-interactive transition-all duration-300">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center">
+                                    <span class="text-2xl">🏛️</span>
+                                </div>
+                                <div class="flex-1">
+                                    <h4 class="text-lg font-semibold text-primary mb-2">University of Virginia & Maryland</h4>
+                                    <div class="space-y-1 text-sm text-text-secondary">
+                                        <p>• Business Strategy</p>
+                                        <p>• Design Thinking</p>
+                                        <p>• Entrepreneurship</p>
+                                    </div>
+                                    <div class="mt-3 bg-primary/10 text-primary px-3 py-1 rounded-full text-xs inline-block">
+                                        Business Excellence
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card card-3d hover:shadow-interactive transition-all duration-300">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-16 h-16 bg-gradient-to-br from-secondary to-accent rounded-lg flex items-center justify-center">
+                                    <span class="text-2xl">🔬</span>
+                                </div>
+                                <div class="flex-1">
+                                    <h4 class="text-lg font-semibold text-primary mb-2">University of Colorado Boulder</h4>
+                                    <div class="space-y-1 text-sm text-text-secondary">
+                                        <p>• Data Structures & Algorithms</p>
+                                    </div>
+                                    <div class="mt-3 bg-secondary/10 text-secondary px-3 py-1 rounded-full text-xs inline-block">
+                                        Technical Foundation
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card card-3d hover:shadow-interactive transition-all duration-300">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-16 h-16 bg-gradient-to-br from-success to-accent rounded-lg flex items-center justify-center">
+                                    <span class="text-2xl">💼</span>
+                                </div>
+                                <div class="flex-1">
+                                    <h4 class="text-lg font-semibold text-primary mb-2">IBM & Coursera</h4>
+                                    <div class="space-y-1 text-sm text-text-secondary">
+                                        <p>• Corporate Sustainability</p>
+                                        <p>• Finance & Project Management</p>
+                                        <p>• Negotiation & Business Analytics</p>
+                                    </div>
+                                    <div class="mt-3 bg-success/10 text-success px-3 py-1 rounded-full text-xs inline-block">
+                                        Industry Leaders
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Certifications -->
+                <div class="mb-16">
+                    <h3 class="text-2xl font-semibold text-primary mb-8 text-center slide-in-3d">
+                        Professional Certifications
+                    </h3>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 stagger-animation">
+                        <div class="bg-gradient-to-br from-accent/10 to-primary/10 rounded-lg p-6 card-3d">
+                            <div class="flex items-center space-x-3 mb-3">
+                                <div class="w-10 h-10 bg-accent/20 rounded-lg flex items-center justify-center">
+                                    <span class="text-lg">📋</span>
+                                </div>
+                                <h4 class="font-semibold text-primary">Project Management</h4>
+                            </div>
+                            <p class="text-sm text-text-secondary">Foundations, Initiation & Planning</p>
+                        </div>
+
+                        <div class="bg-gradient-to-br from-primary/10 to-secondary/10 rounded-lg p-6 card-3d">
+                            <div class="flex items-center space-x-3 mb-3">
+                                <div class="w-10 h-10 bg-primary/20 rounded-lg flex items-center justify-center">
+                                    <span class="text-lg">💾</span>
+                                </div>
+                                <h4 class="font-semibold text-primary">PL/SQL Programming</h4>
+                            </div>
+                            <p class="text-sm text-text-secondary">Advanced Database Development</p>
+                        </div>
+
+                        <div class="bg-gradient-to-br from-secondary/10 to-accent/10 rounded-lg p-6 card-3d">
+                            <div class="flex items-center space-x-3 mb-3">
+                                <div class="w-10 h-10 bg-secondary/20 rounded-lg flex items-center justify-center">
+                                    <span class="text-lg">👑</span>
+                                </div>
+                                <h4 class="font-semibold text-primary">Strategic Leadership</h4>
+                            </div>
+                            <p class="text-sm text-text-secondary">Management & Leadership</p>
+                        </div>
+
+                        <div class="bg-gradient-to-br from-success/10 to-primary/10 rounded-lg p-6 card-3d">
+                            <div class="flex items-center space-x-3 mb-3">
+                                <div class="w-10 h-10 bg-success/20 rounded-lg flex items-center justify-center">
+                                    <span class="text-lg">🗃️</span>
+                                </div>
+                                <h4 class="font-semibold text-primary">SQL (Basic)</h4>
+                            </div>
+                            <p class="text-sm text-text-secondary">HackerRank Certified</p>
+                        </div>
+
+                        <div class="bg-gradient-to-br from-warning/10 to-accent/10 rounded-lg p-6 card-3d">
+                            <div class="flex items-center space-x-3 mb-3">
+                                <div class="w-10 h-10 bg-warning/20 rounded-lg flex items-center justify-center">
+                                    <span class="text-lg">🏆</span>
+                                </div>
+                                <h4 class="font-semibold text-primary">Project Management</h4>
+                            </div>
+                            <p class="text-sm text-text-secondary">Honors & Awards</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Learning Philosophy -->
+                <div class="text-center bg-gradient-to-r from-primary/10 to-accent/10 rounded-2xl p-8">
+                    <div class="max-w-3xl mx-auto">
+                        <h3 class="text-2xl font-bold text-primary mb-4 slide-in-3d">
+                            Expanding Expertise Through Continuous Learning
+                        </h3>
+                        <p class="text-lg text-text-secondary fade-in-up-3d">
+                            "I believe in lifelong learning and staying at the forefront of technology. 
+                            These certifications represent my commitment to excellence across leadership, 
+                            marketing, AI, and project management."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="section-padding bg-surface perspective-container" aria-labelledby="education-heading">
+            <div class="container-max">
+                <div class="text-center mb-16">
+                    <h2 id="education-heading" class="text-3xl md:text-4xl font-bold text-primary mb-4 slide-in-3d">
+                        Educational Journey
+                    </h2>
+                    <p class="text-xl text-text-secondary max-w-3xl mx-auto fade-in-up-3d">
+                        Building a strong foundation from early education to advanced AI specialization.
+                    </p>
+                </div>
+                
+                <div class="max-w-4xl mx-auto">
+                    <div class="space-y-8 stagger-animation">
+                        <!-- Current University -->
+                        <div class="card card-3d hover:shadow-interactive transition-all duration-300 border-l-4 border-accent">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-16 h-16 bg-gradient-to-br from-accent to-primary rounded-lg flex items-center justify-center">
+                                    <span class="text-2xl">🎓</span>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between">
+                                        <div>
+                                            <h3 class="text-xl font-bold text-primary">Bachelor of Technology - BTech</h3>
+                                            <p class="text-accent font-semibold">Computer Science & Artificial Intelligence</p>
+                                            <p class="text-text-secondary">Sister Nivedita University</p>
+                                        </div>
+                                        <div class="mt-2 sm:mt-0">
+                                            <span class="bg-accent/10 text-accent px-3 py-1 rounded-full text-sm font-medium">
+                                                July 2023 - Present
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <p class="text-text-secondary mt-3">
+                                        Specializing in Artificial Intelligence with focus on machine learning, 
+                                        neural networks, and AI application development.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- School Education -->
+                        <div class="card card-3d hover:shadow-interactive transition-all duration-300">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center">
+                                    <span class="text-2xl">📚</span>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between">
+                                        <div>
+                                            <h3 class="text-xl font-bold text-primary">Higher Secondary (11th-12th)</h3>
+                                            <p class="text-accent font-semibold">PCM and Computer Science</p>
+                                            <p class="text-text-secondary">Apeejay School Kolkata</p>
+                                        </div>
+                                        <div class="mt-2 sm:mt-0">
+                                            <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-medium">
+                                                2020 - 2023
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <p class="text-text-secondary mt-3">
+                                        Strong foundation in Physics, Chemistry, Mathematics, and Computer Science.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Secondary Education -->
+                        <div class="card card-3d hover:shadow-interactive transition-all duration-300">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-16 h-16 bg-gradient-to-br from-secondary to-accent rounded-lg flex items-center justify-center">
+                                    <span class="text-2xl">🏫</span>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between">
+                                        <div>
+                                            <h3 class="text-xl font-bold text-primary">Secondary Education (5th-10th)</h3>
+                                            <p class="text-accent font-semibold">PCMB and Computer Science</p>
+                                            <p class="text-text-secondary">Narayana Institute</p>
+                                        </div>
+                                        <div class="mt-2 sm:mt-0">
+                                            <span class="bg-secondary/10 text-secondary px-3 py-1 rounded-full text-sm font-medium">
+                                                March 2014 - March 2020
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <p class="text-text-secondary mt-3">
+                                        Comprehensive education in sciences, mathematics, and early computer programming.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Primary Education -->
+                        <div class="card card-3d hover:shadow-interactive transition-all duration-300">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-16 h-16 bg-gradient-to-br from-success to-primary rounded-lg flex items-center justify-center">
+                                    <span class="text-2xl">🌱</span>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between">
+                                        <div>
+                                            <h3 class="text-xl font-bold text-primary">Primary Education</h3>
+                                            <p class="text-text-secondary">Narayana Institute</p>
+                                        </div>
+                                        <div class="mt-2 sm:mt-0">
+                                            <span class="bg-success/10 text-success px-3 py-1 rounded-full text-sm font-medium">
+                                                June 2005 - May 2014
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <p class="text-text-secondary mt-3">
+                                        Building the foundational skills that sparked my interest in technology and innovation.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section id="contact" class="section-padding bg-gradient-to-r from-primary to-secondary text-white perspective-container" aria-labelledby="cta-heading">
+            <div class="container-max text-center">
+                <h2 id="cta-heading" class="text-3xl md:text-4xl font-bold mb-4 slide-in-3d">
+                    Let's Connect & Build Something Amazing
+                </h2>
+                <p class="text-xl text-secondary-200 mb-8 max-w-3xl mx-auto fade-in-up-3d">
+                    If you need a coder who can pitch ideas, design clean UI, and build scalable systems — I'm already doing it. 
+                    Let's discuss how we can create impactful solutions together.
+                </p>
+                
+                <!-- Contact Information -->
+                <div class="grid md:grid-cols-3 gap-6 mb-12 stagger-animation">
+                    <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6 card-3d">
+                        <div class="text-3xl mb-3">📧</div>
+                        <h3 class="font-semibold mb-2">Email</h3>
+                        <a href="mailto:sdey200406@gmail.com" class="text-accent hover:text-accent-400 transition-smooth">
+                            sdey200406@gmail.com
+                        </a>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6 card-3d">
+                        <div class="text-3xl mb-3">📍</div>
+                        <h3 class="font-semibold mb-2">Location</h3>
+                        <p class="text-secondary-200">Greater Kolkata Area, India</p>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6 card-3d">
+                        <div class="text-3xl mb-3">💼</div>
+                        <h3 class="font-semibold mb-2">Status</h3>
+                        <p class="text-accent">Open for Opportunities</p>
+                    </div>
+                </div>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center stagger-animation">
+                    <a href="https://www.linkedin.com/in/subham-dey-17b7a0275/" target="_blank" rel="noopener noreferrer" class="btn-accent text-lg px-8 py-4 inline-flex items-center space-x-2 card-3d">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                        <span>Connect on LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/delulu-Subh" target="_blank" rel="noopener noreferrer" class="border-2 border-white text-white hover:bg-white hover:text-primary px-8 py-4 rounded-lg font-semibold transition-all duration-250 ease-out inline-flex items-center space-x-2 card-3d">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                        <span>View GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-secondary-900 text-white section-padding perspective-container" role="contentinfo">
+        <div class="container-max">
+            <div class="grid md:grid-cols-4 gap-8 mb-8 stagger-animation">
+                <!-- Brand -->
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="skill-cube w-8 h-8">
+                            <div class="face front">SD</div>
+                            <div class="face back">💻</div>
+                            <div class="face right">🎨</div>
+                            <div class="face left">🚀</div>
+                            <div class="face top">AI</div>
+                            <div class="face bottom">⭐</div>
+                        </div>
+                        <span class="text-xl font-bold gradient-text-3d">Subham Dey</span>
+                    </div>
+                    <p class="text-secondary-300 mb-4 max-w-md">
+                        AI & Software Developer building at the intersection of Code × Design × Business. 
+                        Crafting innovative solutions that make a measurable impact.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://github.com/delulu-Subh" target="_blank" rel="noopener noreferrer" class="text-secondary-400 hover:text-accent transition-smooth card-3d" aria-label="GitHub Profile">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.30.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/subham-dey-17b7a0275/" target="_blank" rel="noopener noreferrer" class="text-secondary-400 hover:text-accent transition-smooth card-3d" aria-label="LinkedIn Profile">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/delulu_subh_/" target="_blank" rel="noopener noreferrer" class="text-secondary-400 hover:text-accent transition-smooth card-3d" aria-label="Instagram Profile">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                        <a href="https://x.com/_subham_dey_" target="_blank" rel="noopener noreferrer" class="text-secondary-400 hover:text-accent transition-smooth card-3d" aria-label="X (Twitter) Profile">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.threads.com/@delulu_subh_" target="_blank" rel="noopener noreferrer" class="text-secondary-400 hover:text-accent transition-smooth card-3d" aria-label="Threads Profile">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12.186 24h-.007c-3.581-.024-6.334-1.205-8.184-3.509C2.35 18.44 1.5 15.586 1.472 12.01v-.017c.03-3.579.879-6.43 2.525-8.482C5.845 1.205 8.6.024 12.18 0h.014c2.746.02 5.043.725 6.826 2.098 1.677 1.29 2.858 3.13 3.509 5.467l-2.04.569c-1.104-3.96-3.898-5.984-8.304-6.015-2.91.022-5.11.936-6.54 2.717C4.307 6.504 3.616 8.914 3.589 12c.027 3.086.718 5.496 2.057 7.164 1.43 1.781 3.631 2.695 6.54 2.717 2.623-.02 4.358-.631 5.8-2.045 1.647-1.613 1.618-3.593 1.09-4.798-.31-.71-.873-1.3-1.634-1.75-.192 1.352-.622 2.446-1.284 3.272-.886 1.102-2.14 1.704-3.73 1.79-1.202.065-2.361-.218-3.259-.801-1.063-.689-1.685-1.74-1.752-2.964-.065-1.19.408-2.285 1.33-3.082.88-.76 2.119-1.207 3.583-1.291a13.853 13.853 0 013.02.142c-.126-.742-.375-1.332-.748-1.757-.513-.584-1.257-.878-2.27-.89-1.004.014-1.734.336-2.308.64-.429.23-.695.511-.695.511l-1.148-1.698s.466-.438 1.084-.747C11.69 6.273 12.688 6.027 14.178 6h.014c1.335.013 2.543.35 3.592 1.002 1.297.805 2.159 2.05 2.508 3.615.422 1.89-.555 4.244-2.6 6.334-1.647 1.683-3.736 2.48-6.507 2.49v.001-.014H12.18l.006.014z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Navigation</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="text-secondary-300 hover:text-accent transition-smooth">About Me</a></li>
+                        <li><a href="#experience" class="text-secondary-300 hover:text-accent transition-smooth">Experience</a></li>
+                        <li><a href="#skills" class="text-secondary-300 hover:text-accent transition-smooth">Skills</a></li>
+                        <li><a href="#certifications" class="text-secondary-300 hover:text-accent transition-smooth">Certifications</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Expertise Areas -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Expertise Areas</h3>
+                    <ul class="space-y-2">
+                        <li><span class="text-secondary-300">AI Tools Development</span></li>
+                        <li><span class="text-secondary-300">Full-Stack Development</span></li>
+                        <li><span class="text-secondary-300">Graphic Design</span></li>
+                        <li><span class="text-secondary-300">Business Strategy</span></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-secondary-700 pt-8 flex flex-col md:flex-row justify-between items-center fade-in-up-3d">
+                <p class="text-secondary-400 text-sm">
+                    © 2025 Subham Dey. All Rights Reserved. Built with passion and precision.
+                </p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="mailto:sdey200406@gmail.com" class="text-secondary-400 hover:text-accent text-sm transition-smooth">Contact Me</a>
+                    <a href="https://github.com/delulu-Subh" class="text-secondary-400 hover:text-accent text-sm transition-smooth">View Code</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Interactions and Smooth Scrolling -->
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    // Close mobile menu if open
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    mobileMenu.classList.add('hidden');
+                    
+                    // Smooth scroll to target
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Intersection Observer for animation triggers
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animationPlayState = 'running';
+                    entry.target.style.opacity = '1';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all animated elements
+        document.querySelectorAll('.fade-in-up-3d, .slide-in-3d, .scale-in-3d, .stagger-animation > *').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Enhanced cinematic parallax scrolling
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const heroSection = document.querySelector('#home');
+            
+            if (heroSection) {
+                const heroHeight = heroSection.offsetHeight;
+                const scrollProgress = scrolled / heroHeight;
+                
+                // Parallax layers with different speeds and directions
+                const parallaxFar = document.querySelectorAll('.parallax-far');
+                const parallaxMid = document.querySelectorAll('.parallax-mid'); 
+                const parallaxNear = document.querySelectorAll('.parallax-near');
+                
+                parallaxFar.forEach(element => {
+                    element.style.transform = `translate3d(0, ${scrolled * 0.1}px, 0) rotate(${scrollProgress * 5}deg)`;
+                });
+                
+                parallaxMid.forEach(element => {
+                    element.style.transform = `translate3d(0, ${scrolled * 0.3}px, 0) scale(${1 + scrollProgress * 0.1})`;
+                });
+                
+                parallaxNear.forEach(element => {
+                    element.style.transform = `translate3d(0, ${scrolled * 0.5}px, 0)`;
+                });
+                
+                // Cosmic background shift
+                const cinematicBg = document.querySelector('.cinematic-hero-bg');
+                if (cinematicBg) {
+                    cinematicBg.style.transform = `translate3d(0, ${scrolled * 0.2}px, 0) scale(${1 + scrollProgress * 0.05})`;
+                }
+                
+                // Particles dynamic movement
+                const particles = document.querySelectorAll('.particle');
+                particles.forEach((particle, index) => {
+                    const speed = (index % 3 + 1) * 0.1;
+                    const direction = index % 2 === 0 ? 1 : -1;
+                    particle.style.transform = `translate3d(${scrolled * speed * direction}px, ${scrolled * speed}px, 0) scale(${1 + scrollProgress * 0.2})`;
+                });
+                
+                // Om symbol depth effect
+                const omSymbol = document.querySelector('.om-symbol');
+                if (omSymbol) {
+                    omSymbol.style.transform = `translate(-50%, -50%) scale(${1 + scrollProgress * 0.3}) rotate(${scrollProgress * 10}deg)`;
+                    omSymbol.style.opacity = Math.max(0.08 - scrollProgress * 0.08, 0);
+                }
+                
+                // Spiritual glow breathing effect
+                const spiritualGlows = document.querySelectorAll('.spiritual-glow');
+                spiritualGlows.forEach((glow, index) => {
+                    const offset = index * Math.PI;
+                    const breathe = Math.sin(Date.now() * 0.001 + offset) * 0.3 + 1;
+                    glow.style.transform = `scale(${breathe}) translate3d(0, ${scrolled * 0.15}px, 0)`;
+                });
+            }
+        });
+
+        // Initialize Intersection Observer for stagger animations
+        const staggerObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const children = entry.target.children;
+                    Array.from(children).forEach((child, index) => {
+                        setTimeout(() => {
+                            child.style.animationDelay = `${index * 0.1}s`;
+                            child.style.animationPlayState = 'running';
+                        }, index * 100);
+                    });
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.stagger-animation').forEach(el => {
+            staggerObserver.observe(el);
+        });
+
+        // Typing effect for the hero section (optional enhancement)
+        const heroText = document.querySelector('#hero-heading span.gradient-text-3d');
+        if (heroText) {
+            const text = heroText.textContent;
+            heroText.textContent = '';
+            let i = 0;
+            
+            setTimeout(() => {
+                const typeWriter = () => {
+                    if (i < text.length) {
+                        heroText.textContent += text.charAt(i);
+                        i++;
+                        setTimeout(typeWriter, 100);
+                    }
+                };
+                typeWriter();
+            }, 1500);
+        }
+
+        // Add smooth reveal animations when elements come into view
+        const revealElements = document.querySelectorAll('.card-3d, .fade-in-up-3d, .slide-in-3d');
+        
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-reveal');
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -30px 0px'
+        });
+
+        revealElements.forEach(el => {
+            revealObserver.observe(el);
+        });
+
+        // Dynamic particle system enhancement
+        function createDynamicParticles() {
+            const particlesContainer = document.querySelector('.cosmic-particles');
+            if (!particlesContainer) return;
+            
+            // Add additional dynamic particles on scroll
+            const additionalParticles = 15;
+            for (let i = 0; i < additionalParticles; i++) {
+                const particle = document.createElement('div');
+                particle.className = `particle ${['small', 'medium', 'large'][Math.floor(Math.random() * 3)]}`;
+                particle.style.top = Math.random() * 100 + '%';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * -20 + 's';
+                particle.style.animationDuration = (15 + Math.random() * 10) + 's';
+                particlesContainer.appendChild(particle);
+            }
+        }
+        
+        // Initialize dynamic particles after page load
+        window.addEventListener('load', () => {
+            setTimeout(createDynamicParticles, 2000);
+        });
+
+        // Responsive animation performance optimization
+        let ticking = false;
+        function requestTick() {
+            if (!ticking) {
+                requestAnimationFrame(updateAnimations);
+            }
+            ticking = true;
+        }
+
+        function updateAnimations() {
+            // Optimized animation updates
+            ticking = false;
+        }
+
+        // Mouse movement interactive parallax effect
+        document.addEventListener('mousemove', (e) => {
+            const mouseX = e.clientX / window.innerWidth - 0.5;
+            const mouseY = e.clientY / window.innerHeight - 0.5;
+            
+            const heroSection = document.querySelector('#home');
+            if (heroSection) {
+                const parallaxElements = heroSection.querySelectorAll('.particle, .lotus-pattern, .mandala-ring');
+                
+                parallaxElements.forEach((element, index) => {
+                    const speed = (index % 5 + 1) * 0.5;
+                    const x = mouseX * speed * 10;
+                    const y = mouseY * speed * 10;
+                    
+                    element.style.transform += ` translate3d(${x}px, ${y}px, 0)`;
+                });
+            }
+        });
+</script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>
