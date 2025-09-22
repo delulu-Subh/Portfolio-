@@ -1,4 +1,4 @@
-# Portfolio-
+# Portfolio 
 # HTML
 
 A modern HTML project utilizing Tailwind CSS for building responsive web applications with minimal setup.
@@ -78,4 +78,4 @@ The app is built with responsive design using Tailwind CSS breakpoints:
 ## 🙏 Acknowledgments
 - Powered by HTML and Tailwind CSS
 
-Built with ❤️ on Rocket.new
+Built with ❤️
