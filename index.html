@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodeCraft Portfolio - Technical Excellence & Business Results</title>
+    <meta name="description" content="Professional developer portfolio showcasing technical expertise and business impact through performance-driven web development." />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fpersonal12480back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+</head>
+<body class="bg-background text-text-primary">
+    <div class="min-h-screen flex items-center justify-center section-padding">
+        <div class="text-center max-w-2xl mx-auto">
+            <div class="mb-8">
+                <h1 class="text-4xl lg:text-6xl font-bold text-gradient mb-4">
+                    CodeCraft Portfolio
+                </h1>
+                <p class="text-xl text-text-secondary mb-8">
+                    Technical Excellence Meets Business Results
+                </p>
+                <div class="w-24 h-1 bg-accent mx-auto mb-8"></div>
+            </div>
+            
+            <div class="card mb-8">
+                <h2 class="text-2xl font-semibold mb-4 text-primary">
+                    Redirecting to Portfolio...
+                </h2>
+                <p class="text-text-secondary mb-6">
+                    You will be automatically redirected to the homepage in <span id="countdown" class="font-semibold text-accent">3</span> seconds.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="pages/homepage_developer_portfolio.html" class="btn-primary">
+                        Enter Portfolio
+                    </a>
+                    <a href="pages/contact_professional_gateway.html" class="btn-secondary">
+                        Contact Direct
+                    </a>
+                </div>
+            </div>
+            
+            <div class="text-sm text-text-secondary">
+                <p>Professional developer portfolio demonstrating technical mastery and business impact</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Countdown timer
+        let countdown = 3;
+        const countdownElement = document.getElementById('countdown');
+        
+        const timer = setInterval(() => {
+            countdown--;
+            countdownElement.textContent = countdown;
+            
+            if (countdown <= 0) {
+                clearInterval(timer);
+                window.location.href = 'pages/homepage_developer_portfolio.html';
+            }
+        }, 1000);
+        
+        // Immediate redirect option
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                clearInterval(timer);
+                window.location.href = 'pages/homepage_developer_portfolio.html';
+            }
+        });
+    </script>
+<script id="dhws-dataInjector" src="/public/dhws-data-injector.js"></script>
+</body>
+</html>
