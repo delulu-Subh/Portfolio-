@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects Portfolio - Technical Case Studies | CodeCraft Portfolio</title>
+    <meta name="description" content="Explore detailed technical case studies showcasing performance optimization mastery, accessibility leadership, and semantic web excellence. Real projects with measurable results." />
+    <link rel="stylesheet" href="../css/main.css" />
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Technical Portfolio - Performance & Accessibility Case Studies" />
+    <meta property="og:description" content="Detailed case studies showing dramatic performance improvements, accessibility compliance, and semantic web excellence with measurable business outcomes." />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+    <meta property="og:url" content="https://codecraft-portfolio.com/projects" />
+    <meta property="og:type" content="website" />
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "CodeCraft Portfolio Projects",
+      "description": "Technical case studies demonstrating performance optimization, accessibility leadership, and semantic web excellence",
+      "author": {
+        "@type": "Person",
+        "name": "CodeCraft Developer"
+      },
+      "workExample": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "High-Performance E-commerce Platform",
+          "description": "98% Core Web Vitals score with 40% conversion improvement"
+        },
+        {
+          "@type": "SoftwareApplication", 
+          "name": "Accessible Healthcare Portal",
+          "description": "WCAG AA compliant serving 50,000+ users"
+        }
+      ]
+    }
+    </script>
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fpersonal12480back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+</head>
+<body class="bg-background text-text-primary">
+    <!-- Skip Links for Accessibility -->
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-accent text-primary px-4 py-2 rounded-lg font-semibold z-50">Skip to main content</a>
+    
+    <!-- Navigation Header -->
+    <header class="fixed top-0 w-full bg-background/95 backdrop-blur-sm border-b border-border z-40" role="banner">
+        <nav class="container-max section-padding py-4" role="navigation" aria-label="Main navigation">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center space-x-2">
+                    <svg class="w-8 h-8 text-accent" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
+                        <path d="M8 4L4 8v16l4 4h16l4-4V8l-4-4H8zm2 2h12l2 2v12l-2 2H10l-2-2V8l2-2zm2 4v8h2V12h4v6h2v-8h-8zm2 2h4v2h-4v-2z"/>
+                    </svg>
+                    <span class="text-xl font-bold text-gradient">CodeCraft</span>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <ul class="hidden md:flex items-center space-x-8" role="menubar">
+                    <li role="none"><a href="homepage_developer_portfolio.html" class="text-text-secondary hover:text-primary transition-smooth" role="menuitem">Home</a></li>
+                    <li role="none"><a href="about_technical_professional.html" class="text-text-secondary hover:text-primary transition-smooth" role="menuitem">About</a></li>
+                    <li role="none"><a href="projects_portfolio_showcase.html" class="text-primary font-semibold border-b-2 border-accent" role="menuitem" aria-current="page">Projects</a></li>
+                    <li role="none"><a href="blog_technical_thought_leadership.html" class="text-text-secondary hover:text-primary transition-smooth" role="menuitem">Blog</a></li>
+                    <li role="none"><a href="contact_professional_gateway.html" class="btn-accent" role="menuitem">Contact</a></li>
+                </ul>
+                
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden p-2 text-text-secondary hover:text-primary" aria-label="Toggle mobile menu" id="mobile-menu-button">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <div class="md:hidden mt-4 pb-4 border-t border-border hidden" id="mobile-menu">
+                <ul class="space-y-2 pt-4" role="menu">
+                    <li><a href="homepage_developer_portfolio.html" class="block py-2 text-text-secondary hover:text-primary transition-smooth" role="menuitem">Home</a></li>
+                    <li><a href="about_technical_professional.html" class="block py-2 text-text-secondary hover:text-primary transition-smooth" role="menuitem">About</a></li>
+                    <li><a href="projects_portfolio_showcase.html" class="block py-2 text-primary font-semibold" role="menuitem" aria-current="page">Projects</a></li>
+                    <li><a href="blog_technical_thought_leadership.html" class="block py-2 text-text-secondary hover:text-primary transition-smooth" role="menuitem">Blog</a></li>
+                    <li><a href="contact_professional_gateway.html" class="block py-2 text-accent font-semibold" role="menuitem">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content" role="main">
+        <!-- Hero Section -->
+        <section class="relative min-h-[60vh] flex items-center justify-center bg-gradient-to-br from-primary-900 via-primary-800 to-secondary-900 text-white overflow-hidden" aria-labelledby="hero-heading">
+            <!-- Background Pattern -->
+            <div class="absolute inset-0 opacity-10">
+                <svg class="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+                    <defs>
+                        <pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse">
+                            <path d="M 10 0 L 0 0 0 10" fill="none" stroke="currentColor" stroke-width="0.5"/>
+                        </pattern>
+                    </defs>
+                    <rect width="100" height="100" fill="url(#grid)"/>
+                </svg>
+            </div>
+            
+            <!-- Floating Performance Metrics -->
+            <div class="absolute top-20 left-10 opacity-20 animate-pulse">
+                <div class="code-block text-xs">
+                    TTI: 0.8s<br />
+                    LCP: 1.2s<br />
+                    CLS: 0.01
+                </div>
+            </div>
+            <div class="absolute bottom-32 right-16 opacity-20 animate-pulse delay-1000">
+                <div class="code-block text-xs">
+                    Lighthouse: 100<br />
+                    WCAG: AA<br />
+                    Performance: 98%
+                </div>
+            </div>
+            
+            <div class="container-max section-padding text-center relative z-10 pt-20">
+                <div class="max-w-4xl mx-auto">
+                    <!-- Performance Badge -->
+                    <div class="inline-flex items-center space-x-2 bg-accent/10 border border-accent/30 rounded-full px-4 py-2 mb-8">
+                        <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span class="text-accent font-medium">12 Featured Case Studies</span>
+                    </div>
+                    
+                    <!-- Main Headline -->
+                    <h1 id="hero-heading" class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                        Technical Excellence<br />
+                        <span class="text-gradient">In Action</span>
+                    </h1>
+                    
+                    <!-- Subtitle -->
+                    <p class="text-xl md:text-2xl text-secondary-200 mb-8 max-w-3xl mx-auto leading-relaxed">
+                        Real-world projects showcasing performance optimization mastery, accessibility leadership, 
+                        and semantic web excellence with measurable business outcomes.
+                    </p>
+                    
+                    <!-- Quick Stats -->
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8 max-w-2xl mx-auto">
+                        <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
+                            <div class="text-2xl font-bold text-accent">98%</div>
+                            <div class="text-sm text-secondary-200">Avg Performance</div>
+                        </div>
+                        <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
+                            <div class="text-2xl font-bold text-accent">AA</div>
+                            <div class="text-sm text-secondary-200">WCAG Compliance</div>
+                        </div>
+                        <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
+                            <div class="text-2xl font-bold text-accent">45%</div>
+                            <div class="text-sm text-secondary-200">Avg Speed Boost</div>
+                        </div>
+                        <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
+                            <div class="text-2xl font-bold text-accent">12</div>
+                            <div class="text-sm text-secondary-200">Case Studies</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Filter Section -->
+        <section class="section-padding bg-surface" aria-labelledby="filter-heading">
+            <div class="container-max">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8">
+                    <div>
+                        <h2 id="filter-heading" class="text-2xl font-bold text-primary mb-2">Project Categories</h2>
+                        <p class="text-text-secondary">Filter by technical focus and expertise area</p>
+                    </div>
+                    
+                    <!-- Filter Controls -->
+                    <div class="flex flex-wrap gap-3 mt-4 md:mt-0">
+                        <button class="filter-btn active bg-accent text-primary px-4 py-2 rounded-lg font-medium transition-smooth" data-filter="all">
+                            <svg class="w-4 h-4 inline mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
+                            </svg>
+                            All Projects
+                        </button>
+                        <button class="filter-btn bg-white border border-border text-text-secondary hover:text-primary px-4 py-2 rounded-lg font-medium transition-smooth" data-filter="performance">
+                            Performance
+                        </button>
+                        <button class="filter-btn bg-white border border-border text-text-secondary hover:text-primary px-4 py-2 rounded-lg font-medium transition-smooth" data-filter="accessibility">
+                            Accessibility
+                        </button>
+                        <button class="filter-btn bg-white border border-border text-text-secondary hover:text-primary px-4 py-2 rounded-lg font-medium transition-smooth" data-filter="semantic">
+                            Semantic Web
+                        </button>
+                        <button class="filter-btn bg-white border border-border text-text-secondary hover:text-primary px-4 py-2 rounded-lg font-medium transition-smooth" data-filter="creative">
+                            Creative Solutions
+                        </button>
+                        <button class="reset-btn bg-secondary-100 text-text-secondary hover:text-primary px-3 py-2 rounded-lg transition-smooth" title="Reset filters">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects Grid -->
+        <section class="section-padding bg-background" aria-labelledby="projects-heading">
+            <div class="container-max">
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="projects-grid">
+                    
+                    <!-- Project 1: E-commerce Performance -->
+                    <article class="card hover:shadow-interactive transition-all duration-300 group project-item" data-category="performance" itemscope itemtype="https://schema.org/SoftwareApplication">
+                        <div class="aspect-video bg-gradient-to-br from-primary to-accent rounded-lg mb-6 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="E-commerce platform dashboard showing performance metrics and analytics" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        </div>
+                        
+                        <!-- Performance Metrics Badge -->
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="bg-success/10 text-success px-3 py-1 rounded-full text-sm font-medium">E-commerce</span>
+                            <div class="flex items-center space-x-3">
+                                <div class="text-center">
+                                    <div class="text-lg font-bold text-accent">98</div>
+                                    <div class="text-xs text-text-secondary">Lighthouse</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-lg font-bold text-success">+40%</div>
+                                    <div class="text-xs text-text-secondary">Conversion</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <h3 class="text-xl font-semibold text-primary mb-3" itemprop="name">High-Performance E-commerce Platform</h3>
+                        <p class="text-text-secondary mb-4" itemprop="description">
+                            Transformed a legacy e-commerce site achieving 98% Core Web Vitals score and 40% conversion rate improvement through semantic restructuring and performance optimization.
+                        </p>
+                        
+                        <!-- Technical Details -->
+                        <div class="space-y-3 mb-4">
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-text-secondary">TTI Improvement:</span>
+                                <span class="font-semibold text-accent">3.2s → 0.8s</span>
+                            </div>
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-text-secondary">LCP Improvement:</span>
+                                <span class="font-semibold text-accent">4.1s → 1.2s</span>
+                            </div>
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-text-secondary">Bundle Size:</span>
+                                <span class="font-semibold text-success">-65% reduction</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Tech Stack -->
+                        <div class="flex items-center space-x-2 mb-4">
+                            <span class="w-3 h-3 bg-accent rounded-full"></span>
+                            <span class="text-sm text-text-secondary">React, Node.js, MongoDB, Redis</span>
+                        </div>
+                        
+                        <!-- Action Buttons -->
+                        <div class="flex items-center justify-between">
+                            <a href="#" class="text-accent hover:text-accent-600 font-medium inline-flex items-center space-x-1">
+                                <span>View Case Study</span>
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                            <div class="flex space-x-2">
+                                <a href="#" class="text-text-secondary hover:text-primary transition-smooth" title="View live site">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="text-text-secondary hover:text-primary transition-smooth" title="View code repository">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: Healthcare Accessibility -->
+                    <article class="card hover:shadow-interactive transition-all duration-300 group project-item" data-category="accessibility" itemscope itemtype="https://schema.org/SoftwareApplication">
+                        <div class="aspect-video bg-gradient-to-br from-secondary to-primary rounded-lg mb-6 overflow-hidden">
+                            <img src="https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Healthcare application interface with accessibility features and patient portal" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        </div>
+                        
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-medium">Healthcare</span>
+                            <div class="flex items-center space-x-3">
+                                <div class="text-center">
+                                    <div class="text-lg font-bold text-accent">AA</div>
+                                    <div class="text-xs text-text-secondary">WCAG</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-lg font-bold text-success">50K+</div>
+                                    <div class="text-xs text-text-secondary">Users</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <h3 class="text-xl font-semibold text-primary mb-3" itemprop="name">Accessible Healthcare Portal</h3>
+                        <p class="text-text-secondary mb-4" itemprop="description">
+                            Built a fully accessible patient portal with semantic HTML5, ARIA implementation, and keyboard navigation, serving 50,000+ users with diverse accessibility needs.
+                        </p>
+                        
+                        <div class="space-y-3 mb-4">
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-text-secondary">Screen Reader Support:</span>
+                                <span class="font-semibold text-success">100% Compatible</span>
+                            </div>
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-text-secondary">Keyboard Navigation:</span>
+                                <span class="font-semibold text-success">Full Support</span>
+                            </div>
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-text-secondary">Color Contrast:</span>
+                                <span class="font-semibold text-success">AAA Compliant</span>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-2 mb-4">
+                            <span class="w-3 h-3 bg-primary rounded-full"></span>
+                            <span class="text-sm text-text-secondary">Vue.js, Express, PostgreSQL, ARIA</span>
+                        </div>
+                        
+                        <div class="flex items-center justify-between">
+                            <a href="#" class="text-accent hover:text-accent-600 font-medium inline-flex items-center space-x-1">
+                                <span>View Case Study</span>
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                            <div class="flex space-x-2">
+                                <a href="#" class="text-text-secondary hover:text-primary transition-smooth" title="Accessibility audit report">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="text-text-secondary hover:text-primary transition-smooth" title="View code repository">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3: Financial Dashboard -->
+                    <article class="card hover:shadow-interactive transition-all duration-300 group project-item" data-category="performance creative" itemscope itemtype="https://schema.org/SoftwareApplication">
+                        <div class="aspect-video bg-gradient-to-br from-accent to-secondary rounded-lg mb-6 overflow-hidden">
+                            <img src="https://images.pixabay.com/photo/2016/11/30/20/58/programming-1873854_1280.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Financial dashboard with real-time data visualization and analytics charts" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        </div>
+                        
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="bg-warning/10 text-warning px-3 py-1 rounded-full text-sm font-medium">FinTech</span>
+                            <div class="flex items-center space-x-3">
+                                <div class="text-center">
+                                    <div class="text-lg font-bold text-accent">0.8s</div>
+                                    <div class="text-xs text-text-secondary">LCP</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-lg font-bold text-success">10K+</div>
+                                    <div class="text-xs text-text-secondary">Concurrent</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <h3 class="text-xl font-semibold text-primary mb-3" itemprop="name">Real-time Financial Dashboard</h3>
+                        <p class="text-text-secondary mb-4" itemprop="description">
+                            Developed a high-performance financial dashboard with real-time data updates, achieving sub-800ms LCP while handling 10,000+ concurrent users.
+                        </p>
+                        
+                        <div class="space-y-3 mb-4">
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-text-secondary">Real-time Updates:</span>
+                                <span class="font-semibold text-success">WebSocket</span>
+                            </div>
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-text-secondary">Data Processing:</span>
+                                <span class="font-semibold text-accent">&lt;100ms</span>
+                            </div>
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-text-secondary">Uptime:</span>
+                                <span class="font-semibold text-success">99.9%</span>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-2 mb-4">
+                            <span class="w-3 h-3 bg-warning rounded-full"></span>
+                            <span class="text-sm text-text-secondary">Angular, WebSocket, Redis, D3.js</span>
+                        </div>
+                        
+                        <div class="flex items-center justify-between">
+                            <a href="#" class="text-accent hover:text-accent-600 font-medium inline-flex items-center space-x-1">
+                                <span>View Case Study</span>
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                            <div class="flex space-x-2">
+                                <a href="#" class="text-text-secondary hover:text-primary transition-smooth" title="Performance metrics">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="text-text-secondary hover:text-primary transition-smooth" title="View code repository">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 4: Semantic Blog Platform -->
+                    <article class="card hover:shadow-interactive transition-all duration-300 group project-item" data-category="semantic" itemscope itemtype="https://schema.org/SoftwareApplication">
+                        <div class="aspect-video bg-gradient-to-br from-primary-600 to-accent-600 rounded-lg mb-6 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Blog platform with semantic markup and SEO optimization features" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        </div>
+                        
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="bg-accent/10 text-accent px-3 py-1 rounded-full text-sm font-medium">Publishing</span>
+                            <div class="flex items-center space-x-3">
+                                <div class="text-center">
+                                    <div class="text-lg font-bold text-accent">95</div>
+                                    <div class="text-xs text-text-secondary">SEO Score</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-lg font-bold text-success">+180%</div>
+                                    <div class="text-xs text-text-secondary">Organic Traffic</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <h3 class="text-xl font-semibold text-primary mb-3" itemprop="name">Semantic Blog Platform</h3>
+                        <p class="text-text-secondary mb-4" itemprop="description">
+                            Built a content management system with rich semantic markup, JSON-LD structured data, and advanced SEO optimization resulting in 180% organic traffic increase.
+                        </p>
+                        
+                        <div class="space-y-3 mb-4">
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-text-secondary">Schema Markup:</span>
+                                <span class="font-semibold text-success">Full Implementation</span>
+                            </div>
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-text-secondary">Rich Snippets:</span>
+                                <span class="font-semibold text-accent">100% Coverage</span>
+                            </div>
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-text-secondary">Page Speed:</span>
+                                <span class="font-semibold text-success">95/100</span>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-2 mb-4">
+                            <span class="w-3 h-3 bg-accent rounded-full"></span>
+                            <span class="text-sm text-text-secondary">Next.js, Headless CMS, GraphQL</span>
+                        </div>
+                        
+                        <div class="flex items-center justify-between">
+                            <a href="#" class="text-accent hover:text-accent-600 font-medium inline-flex items-center space-x-1">
+                                <span>View Case Study</span>
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                            <div class="flex space-x-2">
+                                <a href="#" class="text-text-secondary hover:text-primary transition-smooth" title="SEO audit report">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="text-text-secondary hover:text-primary transition-smooth" title="View code repository">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 5: Creative Portfolio -->
+                    <article class="card hover:shadow-interactive transition-all duration-300 group project-item" data-category="creative" itemscope itemtype="https://schema.org/SoftwareApplication">
+                        <div class="aspect-video bg-gradient-to-br from-secondary-600 to-primary-600 rounded-lg mb-6 overflow-hidden">
+                            <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Creative portfolio website with interactive animations and modern design" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        </div>
+                        
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="bg-secondary/10 text-secondary px-3 py-1 rounded-full text-sm font-medium">Creative</span>
+                            <div class="flex items-center space-x-3">
+                                <div class="text-center">
+                                    <div class="text-lg font-bold text-accent">92</div>
+                                    <div class="text-xs text-text-secondary">Design Score</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-lg font-bold text-success">+250%</div>
+                                    <div class="text-xs text-text-secondary">Engagement</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <h3 class="text-xl font-semibold text-primary mb-3" itemprop="name">Interactive Creative Portfolio</h3>
+                        <p class="text-text-secondary mb-4" itemprop="description">
+                            Designed and developed an award-winning creative portfolio with advanced CSS animations, WebGL effects, and performance-optimized interactions.
+                        </p>
+                        
+                        <div class="space-y-3 mb-4">
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-text-secondary">Animation Performance:</span>
+                                <span class="font-semibold text-success">60fps Stable</span>
+                            </div>
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-text-secondary">WebGL Integration:</span>
+                                <span class="font-semibold text-accent">Three.js</span>
+                            </div>
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-text-secondary">Mobile Optimized:</span>
+                                <span class="font-semibold text-success">100%</span>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-2 mb-4">
+                            <span class="w-3 h-3 bg-secondary rounded-full"></span>
+                            <span class="text-sm text-text-secondary">Three.js, GSAP, WebGL, CSS Grid</span>
+                        </div>
+                        
+                        <div class="flex items-center justify-between">
+                            <a href="#" class="text-accent hover:text-accent-600 font-medium inline-flex items-center space-x-1">
+                                <span>View Case Study</span>
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                            <div class="flex space-x-2">
+                                <a href="#" class="text-text-secondary hover:text-primary transition-smooth" title="View live demo">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1m4 0h1m-6 4h.01M19 10a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="text-text-secondary hover:text-primary transition-smooth" title="View code repository">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 6: API Performance -->
+                    <article class="card hover:shadow-interactive transition-all duration-300 group project-item" data-category="performance" itemscope itemtype="https://schema.org/SoftwareApplication">
+                        <div class="aspect-video bg-gradient-to-br from-success-600 to-accent-600 rounded-lg mb-6 overflow-hidden">
+                            <img src="https://images.pixabay.com/photo/2018/05/18/15/30/web-design-3411373_1280.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="API performance monitoring dashboard with real-time metrics" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        </div>
+                        
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="bg-success/10 text-success px-3 py-1 rounded-full text-sm font-medium">API</span>
+                            <div class="flex items-center space-x-3">
+                                <div class="text-center">
+                                    <div class="text-lg font-bold text-accent">50ms</div>
+                                    <div class="text-xs text-text-secondary">Response</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-lg font-bold text-success">99.9%</div>
+                                    <div class="text-xs text-text-secondary">Uptime</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <h3 class="text-xl font-semibold text-primary mb-3" itemprop="name">High-Performance API Gateway</h3>
+                        <p class="text-text-secondary mb-4" itemprop="description">
+                            Architected a scalable API gateway with advanced caching, rate limiting, and monitoring, achieving 50ms average response times at scale.
+                        </p>
+                        
+                        <div class="space-y-3 mb-4">
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-text-secondary">Throughput:</span>
+                                <span class="font-semibold text-success">100K req/sec</span>
+                            </div>
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-text-secondary">Cache Hit Rate:</span>
+                                <span class="font-semibold text-accent">95%</span>
+                            </div>
+                            <div class="flex items-center justify-between text-sm">
+                                <span class="text-text-secondary">Error Rate:</span>
+                                <span class="font-semibold text-success">&lt;0.1%</span>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-2 mb-4">
+                            <span class="w-3 h-3 bg-success rounded-full"></span>
+                            <span class="text-sm text-text-secondary">Node.js, Redis, Docker, Kubernetes</span>
+                        </div>
+                        
+                        <div class="flex items-center justify-between">
+                            <a href="#" class="text-accent hover:text-accent-600 font-medium inline-flex items-center space-x-1">
+                                <span>View Case Study</span>
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                            <div class="flex space-x-2">
+                                <a href="#" class="text-text-secondary hover:text-primary transition-smooth" title="Performance benchmarks">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="text-text-secondary hover:text-primary transition-smooth" title="View documentation">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                
+                <!-- Load More Button -->
+                <div class="text-center mt-12">
+                    <button class="btn-primary text-lg px-8 py-4 inline-flex items-center space-x-2" id="load-more-btn">
+                        <span>Load More Projects</span>
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Achievements Section -->
+        <section class="section-padding bg-surface" aria-labelledby="achievements-heading">
+            <div class="container-max">
+                <div class="text-center mb-16">
+                    <h2 id="achievements-heading" class="text-3xl md:text-4xl font-bold text-primary mb-4">
+                        Technical Achievements & Metrics
+                    </h2>
+                    <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                        Quantifiable results demonstrating the impact of semantic web excellence and performance optimization mastery.
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Performance Metrics -->
+                    <div class="card text-center">
+                        <div class="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-primary mb-2">98%</h3>
+                        <p class="text-text-secondary mb-2">Average Lighthouse Score</p>
+                        <div class="text-sm text-accent">Across all projects</div>
+                    </div>
+                    
+                    <!-- Accessibility Compliance -->
+                    <div class="card text-center">
+                        <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-primary mb-2">100%</h3>
+                        <p class="text-text-secondary mb-2">WCAG AA Compliance</p>
+                        <div class="text-sm text-accent">All accessibility standards met</div>
+                    </div>
+                    
+                    <!-- Performance Improvements -->
+                    <div class="card text-center">
+                        <div class="w-16 h-16 bg-success/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11l5-5m0 0l5 5m-5-5v12"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-primary mb-2">45%</h3>
+                        <p class="text-text-secondary mb-2">Average Speed Improvement</p>
+                        <div class="text-sm text-accent">TTI and LCP optimizations</div>
+                    </div>
+                    
+                    <!-- Client Satisfaction -->
+                    <div class="card text-center">
+                        <div class="w-16 h-16 bg-warning/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-warning" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-primary mb-2">5.0</h3>
+                        <p class="text-text-secondary mb-2">Client Satisfaction Rating</p>
+                        <div class="text-sm text-accent">Based on 24 project reviews</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="section-padding bg-gradient-to-r from-primary to-secondary text-white" aria-labelledby="cta-heading">
+            <div class="container-max text-center">
+                <h2 id="cta-heading" class="text-3xl md:text-4xl font-bold mb-4">
+                    Ready to Optimize Your Digital Performance?
+                </h2>
+                <p class="text-xl text-secondary-200 mb-8 max-w-2xl mx-auto">
+                    Let's discuss how semantic web excellence and performance optimization can transform your project's success metrics and user experience.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <a href="contact_professional_gateway.html" class="btn-accent text-lg px-8 py-4 inline-flex items-center space-x-2">
+                        <span>Start Your Project</span>
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="border-2 border-white text-white hover:bg-white hover:text-primary px-8 py-4 rounded-lg font-semibold transition-all duration-250 ease-out inline-flex items-center space-x-2">
+                        <span>Download Portfolio PDF</span>
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-secondary-900 text-white section-padding" role="contentinfo">
+        <div class="container-max">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <!-- Brand -->
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <svg class="w-8 h-8 text-accent" viewBox="0 0 32 32" fill="currentColor">
+                            <path d="M8 4L4 8v16l4 4h16l4-4V8l-4-4H8zm2 2h12l2 2v12l-2 2H10l-2-2V8l2-2zm2 4v8h2V12h4v6h2v-8h-8zm2 2h4v2h-4v-2z"/>
+                        </svg>
+                        <span class="text-xl font-bold text-gradient">CodeCraft Portfolio</span>
+                    </div>
+                    <p class="text-secondary-300 mb-4 max-w-md">
+                        Professional developer specializing in semantic web excellence, performance optimization, and accessibility leadership. Crafting digital experiences that perform.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-secondary-400 hover:text-accent transition-smooth" aria-label="GitHub Profile">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-secondary-400 hover:text-accent transition-smooth" aria-label="LinkedIn Profile">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-secondary-400 hover:text-accent transition-smooth" aria-label="Twitter Profile">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="homepage_developer_portfolio.html" class="text-secondary-300 hover:text-accent transition-smooth">Home</a></li>
+                        <li><a href="about_technical_professional.html" class="text-secondary-300 hover:text-accent transition-smooth">About</a></li>
+                        <li><a href="blog_technical_thought_leadership.html" class="text-secondary-300 hover:text-accent transition-smooth">Blog</a></li>
+                        <li><a href="contact_professional_gateway.html" class="text-secondary-300 hover:text-accent transition-smooth">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Services -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Expertise</h3>
+                    <ul class="space-y-2">
+                        <li><span class="text-secondary-300">Performance Optimization</span></li>
+                        <li><span class="text-secondary-300">Accessibility Audits</span></li>
+                        <li><span class="text-secondary-300">Semantic Web Development</span></li>
+                        <li><span class="text-secondary-300">Technical Consulting</span></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-secondary-700 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-secondary-400 text-sm">
+                    © 2025 CodeCraft Portfolio. All Rights Reserved.
+                </p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="text-secondary-400 hover:text-accent text-sm transition-smooth">Privacy Policy</a>
+                    <a href="#" class="text-secondary-400 hover:text-accent text-sm transition-smooth">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Filtering and Mobile Menu -->
+    <script>
+        // Mobile Menu Toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Project Filtering
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const resetButton = document.querySelector('.reset-btn');
+        const projectItems = document.querySelectorAll('.project-item');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const filter = this.getAttribute('data-filter');
+                
+                // Update active button
+                filterButtons.forEach(btn => {
+                    btn.classList.remove('active', 'bg-accent', 'text-primary');
+                    btn.classList.add('bg-white', 'border', 'border-border', 'text-text-secondary');
+                });
+                this.classList.add('active', 'bg-accent', 'text-primary');
+                this.classList.remove('bg-white', 'border', 'border-border', 'text-text-secondary');
+                
+                // Filter projects
+                projectItems.forEach(item => {
+                    const categories = item.getAttribute('data-category');
+                    if (filter === 'all' || categories.includes(filter)) {
+                        item.style.display = 'block';
+                        item.style.opacity = '1';
+                    } else {
+                        item.style.opacity = '0';
+                        setTimeout(() => {
+                            item.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            });
+        });
+
+        // Reset Filter
+        resetButton.addEventListener('click', function() {
+            // Reset to "All Projects"
+            filterButtons.forEach(btn => {
+                btn.classList.remove('active', 'bg-accent', 'text-primary');
+                btn.classList.add('bg-white', 'border', 'border-border', 'text-text-secondary');
+            });
+            filterButtons[0].classList.add('active', 'bg-accent', 'text-primary');
+            filterButtons[0].classList.remove('bg-white', 'border', 'border-border', 'text-text-secondary');
+            
+            // Show all projects
+            projectItems.forEach(item => {
+                item.style.display = 'block';
+                item.style.opacity = '1';
+            });
+        });
+
+        // Load More Functionality (Placeholder)
+        document.getElementById('load-more-btn').addEventListener('click', function() {
+            // This would typically load more projects via AJAX
+            alert('Loading more projects... (This would connect to a backend API in a real implementation)');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Lazy loading animation for project cards
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.transform = 'translateY(0)';
+                    entry.target.style.opacity = '1';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all project cards
+        projectItems.forEach(item => {
+            item.style.transform = 'translateY(20px)';
+            item.style.opacity = '0';
+            item.style.transition = 'transform 0.6s ease-out, opacity 0.6s ease-out';
+            observer.observe(item);
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>
